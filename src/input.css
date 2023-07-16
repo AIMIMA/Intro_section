@@ -36,11 +36,11 @@
     @apply transition-all duration-300;
   }
 
-  .nav ul .active > .group img {
+  .nav ul .active > img {
     @apply rotate-180;
   }
 
-  .nav ul .active a + .drop-menu {
+  .nav ul .active + .drop-menu {
     @apply flex;
   }
 
@@ -80,11 +80,8 @@
       @apply flex-col items-start gap-5 text-[16px];
     }
     
-    .active a.group {
-      @apply justify-start;
-    }
   
-    .nav ul .active a + .drop-menu {
+    .nav ul li .active + .drop-menu {
       @apply flex relative top-2 shadow-none gap-4 text-[15];
     }
   

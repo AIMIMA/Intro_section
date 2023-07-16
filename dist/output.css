@@ -479,12 +479,12 @@ ul.drop-menu {
   transition-duration: 300ms;
 }
 
-.nav ul .active > .group img {
+.nav ul .active > img {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.nav ul .active a + .drop-menu {
+.nav ul .active + .drop-menu {
   display: flex;
 }
 
@@ -544,11 +544,7 @@ ul.drop-menu {
     font-size: 16px;
   }
 
-  .active a.group {
-    justify-content: flex-start;
-  }
-
-  .nav ul .active a + .drop-menu {
+  .nav ul li .active + .drop-menu {
     position: relative;
     top: 0.5rem;
     display: flex;

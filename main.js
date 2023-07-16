@@ -1,7 +1,7 @@
 const header = document.querySelector("header");
 const burgerMenu = document.querySelector(".burger");
 const toggleMenuIcon = document.querySelector(".burger .menuburger");
-const lis = document.querySelectorAll(".nav li");
+const lis = document.querySelectorAll(".nav li a");
 
 
 // close and open navbar (sidebar)
