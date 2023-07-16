@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./dist/all.min.css">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper min-h-screen">
+    <header class="between bg-wh fixed left-0 z-50 w-full h-20 px-10 max-am:px-5 py-2">
+      <div class="logo pr-12 text-3xl font-bold text-bl">
+        <a href="#">snap</a>
+      </div>
+      <div class="burger relative z-[1001] sm:hidden">
+        <img class="menuburger cursor-pointer" src="./images/icon-normal-menu.svg" alt="">
+      </div>
+      <div class="content flex-1 between gap-12 max-sm:items-start max-sm:justify-start">
+        <div class="nav">
+          <ul class="center gap-10 text-gr text-sm">
+            <li>
+              <a href="#" class="group features center gap-2 hover:text-bl ">Features<img
+                  src="./images/icon-arrow-down.svg" alt="">
+              </a>
+              <ul class="drop-menu">
+                <li class="">
+                  <img src="./images/icon-todo.svg" alt="">
+                  <a href="#">Todo List</a>
+                </li>
+                <li class="">
+                  <img src="./images/icon-calendar.svg" alt="">
+                  <a href="#">Calendar</a>
+                </li>
+                <li class="">
+                  <img src="./images/icon-reminders.svg" alt="">
+                  <a href="#">Reminders</a>
+                </li>
+                <li class="">
+                  <img src="./images/icon-planning.svg" alt="">
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="group company center gap-2 hover:text-bl ">Company<img
+                  src="./images/icon-arrow-down.svg" alt="">
+              </a>
+              <ul class="drop-menu">
+                <li class="">
+                  <a href="#">History</a>
+                </li>
+                <li class="">
+                  <a href="#">Our Team</a>
+                </li>
+                <li class="">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="careers hover:text-bl ">Careers</a></li>
+            <li><a href="#" class="about hover:text-bl ">About</a></li>
+          </ul>
+        </div>
+        <div class="forms center gap-10 text-gr text-sm">
+          <a href="#" class="login hover:text-bl ">Login</a>
+          <a href="#" class="register btn-main hover:text-bl ">Register</a>
+        </div>
+      </div>
+    </header>
+    <div class="landing relative bg-wh">
+      <div class="center sm:px-10 min-h-screen max-sm:pt-20 max-sm:flex-col gap-[200px] max-sm:gap-10 max-sm:pb-10">
+        <div class="text flex flex-col justify-between max-sm:items-center gap-10 max-sm:text-center">
+          <div class="info space-y-[40px] max-sm:p-5 max-sm:space-y-5">
+            <h1 class=" text-bl font-bold max-sm:text-[30px]">Make <span class="block -mt-5 max-sm:inline-block">remote
+                work</span>
+            </h1>
+            <p class="text-gr max-sm:text-sm max-w-[480px]">Get your team in sync, no matter your location. Streamline
+              processes,
+              create team rituals, and watch productivity soar.</p>
+            <a href="#"
+              class="btn-landing block w-fit px-3 py-2 bg-bl text-wh rounded-xl border-2 border-solid border-bl hover:btn-main hover:px-3 hover:py-2 hover:bg-wh max-sm:mx-auto hover:text-bl transition-main">Learn
+              more</a>
+          </div>
+          <div class="sponsers mt-16 flex items-center gap-5">
+            <img src="./images/client-databiz.svg" alt="">
+            <img src="./images/client-audiophile.svg" alt="">
+            <img src="./images/client-meet.svg" alt="">
+            <img src="./images/client-maker.svg" alt="">
+          </div>
+        </div>
+        <div class="photo max-sm:-order-1">
+          <img src="./images/image-hero-desktop.png" alt="" class="w-[450px] block max-sm:hidden">
+          <img src="./images/image-hero-mobile.png" alt="" class="hidden max-sm:block">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes,
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="/main.js"></script>
+</body>
+
+</html>

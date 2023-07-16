@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+  }
+
+  .nav li:hover,
+  .forms a:hover {
+    @apply text-bl;
+  } 
+
+  ul.drop-menu {
+    @apply absolute bg-white top-10 right-0 py-2.5 px-5 shadow-shMain rounded-xl w-max flex-col gap-2.5 text-xs hidden;
+  }
+
+  .drop-menu li {
+    @apply flex items-start gap-2.5;
+  }
+
+  .nav ul li > .group img {
+    @apply transition-all duration-300;
+  }
+
+  .nav ul .active > .group img {
+    @apply rotate-180;
+  }
+
+  .nav ul .active a + .drop-menu {
+    @apply flex;
+  }
+
+  .landing .text .info h1 {
+    font-size: clamp(30px, 4vw, 70px);
+  }
+
+  @media(max-width: 639px) {
+    .content {
+      @apply  flex flex-col fixed z-[1000] top-0 -right-full bg-white p-5 pt-20 w-[65%] h-screen transition-all duration-300;
+    }
+
+    header.act .content {
+      @apply  right-0;
+    }
+
+    header::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0%;
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      z-index: 57;
+      background-color: #00000096;
+      pointer-events: none;
+      user-select: none;
+      transition: all 0.3s 0s ease;
+  }
+  .act::after {
+      display: block;
+      transition-delay: 0.3s;
+  }
+
+    .nav > ul {
+      @apply flex-col items-start gap-5 text-[16px];
+    }
+    
+    .active a.group {
+      @apply justify-start;
+    }
+  
+    .nav ul .active a + .drop-menu {
+      @apply flex relative top-2 shadow-none gap-4 text-[15];
+    }
+  
+    .forms {
+      @apply flex-col w-full;
+    }
+
+    .sponsers img {
+      @apply w-16;
+    }
+  }
+}
+
+@layer components {
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .between {
+    @apply flex justify-between items-center;
+  }
+
+  
+  .transition-main {
+    @apply transition-all duration-300;
+  }
+
+  .active {
+    @apply text-bl;
+  }
+
+  .btn-main {
+    @apply py-2 px-4 rounded-xl border-2 border-solid border-gr transition-main hover:border-bl;
+  }
+}
